@@ -114,18 +114,18 @@ score = 0
 can_score = True
 
 
-bg_surface = pygame.image.load("C:/Users/salva/Downloads/background-day.png").convert()
+bg_surface = pygame.image.load("day.png").convert()
 bg_surface = pygame.transform.scale2x(bg_surface)
 
 
-floor_surface = pygame.image.load("C:/Users/salva/Downloads/base.png").convert()
+floor_surface = pygame.image.load("base.png").convert()
 floor_surface = pygame.transform.scale2x(floor_surface)
 floor_x_position = 0
 
 
-bird_downflap = pygame.transform.scale2x(pygame.image.load("C:/Users/salva/Downloads/bluebird-downflap.png").convert_alpha())
-bird_midflap = pygame.transform.scale2x(pygame.image.load("C:/Users/salva/Downloads/bluebird-midflap.png").convert_alpha())
-bird_upflap = pygame.transform.scale2x(pygame.image.load("C:/Users/salva/Downloads/bluebird-upflap.png").convert_alpha())
+bird_downflap = pygame.transform.scale2x(pygame.image.load("bluebird-downflap.png").convert_alpha())
+bird_midflap = pygame.transform.scale2x(pygame.image.load("bluebird-midflap.png").convert_alpha())
+bird_upflap = pygame.transform.scale2x(pygame.image.load("bluebird-upflap.png").convert_alpha())
 bird_frames = [bird_downflap, bird_midflap, bird_upflap]
 
 bird_index = 0
@@ -135,7 +135,7 @@ bird_rect = bird_surface.get_rect(center=(100, 312))
 BIRDFLAP = pygame.USEREVENT + 1
 pygame.time.set_timer(BIRDFLAP, 200)
 
-pipe_surface = pygame.image.load("C:/Users/salva/Downloads/pipe-green.png")
+pipe_surface = pygame.image.load("pipe-green.png")
 pipe_surface = pygame.transform.scale2x(pipe_surface)
 pipe_list = []
 pipe_height = [250, 350, 450]
@@ -144,13 +144,13 @@ SPAWNPIPE = pygame.USEREVENT
 pygame.time.set_timer(SPAWNPIPE, 1200)
 
 
-flap_sound = pygame.mixer.Sound("C:/Users/salva/Downloads/sfx_wing.wav")
+flap_sound = pygame.mixer.Sound("sfx_wing.wav")
 flap_sound.set_volume(0.08)
 
-death_sound = pygame.mixer.Sound("C:/Users/salva/Downloads/sfx_hit.wav")
+death_sound = pygame.mixer.Sound("sfx_hit.wav")
 death_sound.set_volume(0.05)
 
-score_sound = pygame.mixer.Sound("C:/Users/salva/Downloads/sfx_point.wav")
+score_sound = pygame.mixer.Sound("sfx_point.wav")
 score_sound.set_volume(0.02)
 score_sound_countdown = 100
 
